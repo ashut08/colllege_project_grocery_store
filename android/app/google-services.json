@@ -14,11 +14,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "746490550695-9s7vog5ue34biuc0id1e76mqt4efc80k.apps.googleusercontent.com",
+          "client_id": "746490550695-kman1bdenvtqd6q8hesq85m93d0flgk9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "ashutosh08.grocery_store",
-            "certificate_hash": "717dd64233f0326ee6378ca067f0b433c40101bf"
+            "certificate_hash": "f09c0482e6b41753ca8568cd144fca52c0972e5a"
           }
         },
         {
@@ -47,6 +47,35 @@
         "mobilesdk_app_id": "1:746490550695:android:40923ce7c8152731d93e82",
         "android_client_info": {
           "package_name": "ashutosh08.grocery_store_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746490550695-kgt797nm4gb4rn5n7rpm3qha88tvh6ed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNS1l9jFNdMuvF16XPx0MjqPMF_FX7P4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746490550695-kgt797nm4gb4rn5n7rpm3qha88tvh6ed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746490550695:android:132f890e5041c1ccd93e82",
+        "android_client_info": {
+          "package_name": "ashutosh08.grocery_store_delivery"
         }
       },
       "oauth_client": [

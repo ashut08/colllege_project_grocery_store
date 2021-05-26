@@ -143,59 +143,40 @@ class _SignUpScreenState extends State<SignUpScreen> {
         physics: NeverScrollableScrollPhysics(),
         child: Column(
           children: <Widget>[
-            Container(
-              height: 200.0,
-              width: size.width,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Theme.of(context).primaryColorDark,
-                    Theme.of(context).primaryColor,
-                  ],
-                ),
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(30.0),
-                  bottomLeft: Radius.circular(30.0),
-                ),
-              ),
-              child: Stack(
-                children: <Widget>[
-                  SvgPicture.asset(
-                    'assets/banners/signup_top.svg',
-                    fit: BoxFit.fitWidth,
-                  ),
-                  Positioned(
-                    left: 12.0,
-                    top: 35.0,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(50.0),
-                      child: Material(
-                        color: Colors.transparent,
-                        child: InkWell(
-                          splashColor: Colors.white.withOpacity(0.5),
-                          onTap: () {
-                            Navigator.pop(context);
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.transparent,
-                            ),
-                            width: 38.0,
-                            height: 35.0,
-                            child: Icon(
-                              Icons.close,
-                              color: Colors.white.withOpacity(0.85),
-                              size: 24.0,
-                            ),
+            Stack(
+              children: <Widget>[
+                Container(
+                    height: 200,
+                    padding: EdgeInsets.only(top: 60, left: 90),
+                    child: Image.asset("assets/icons/login.png")),
+                Align(
+                  alignment: Alignment.topLeft,
+                  child: Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      splashColor: Colors.white.withOpacity(0.5),
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                        ),
+                        width: 38.0,
+                        height: 35.0,
+                        child: Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Icon(
+                            Icons.close,
+                            color: Colors.black,
+                            size: 24.0,
                           ),
                         ),
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Container(
               height: size.height - 200.0,

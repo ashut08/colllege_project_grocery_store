@@ -129,25 +129,10 @@ class _SignInScreenState extends State<SignInScreen> {
         child: Column(
           children: <Widget>[
             Container(
-              height: 200.0,
-              width: size.width,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Theme.of(context).primaryColorDark,
-                    Theme.of(context).primaryColor,
-                  ],
-                ),
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(30.0),
-                  bottomLeft: Radius.circular(30.0),
-                ),
-              ),
-              child: SvgPicture.asset(
-                'assets/banners/signin_top.svg',
-                fit: BoxFit.fitWidth,
+              padding: EdgeInsets.only(top: 40),
+              height: 200,
+              child: Image.asset(
+                'assets/icons/login.png',
               ),
             ),
             Container(
