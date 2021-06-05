@@ -44,6 +44,8 @@ dependencies:
   transparent_image: ^1.0.0
   uuid: ^2.2.2
   razorpay_flutter: ^1.2.2
+  test: 
+  integration_test: ^1.0.1
 
 dev_dependencies:
   flutter_test:

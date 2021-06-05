@@ -498,28 +498,27 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                   },
                                 )
                               : SizedBox(),
-                          widget.cartValues.paymentMethods.razorpay
-                              ? RadioListTile(
-                                  activeColor: Theme.of(context).primaryColor,
-                                  dense: true,
-                                  value: 3,
-                                  groupValue: selectedPayment,
-                                  title: Text(
-                                    'Pay via Razorpay',
-                                    style: GoogleFonts.poppins(
-                                      color: Colors.black87,
-                                      fontSize: 14.0,
-                                      fontWeight: FontWeight.w500,
-                                      letterSpacing: 0.3,
-                                    ),
-                                  ),
-                                  onChanged: (val) {
-                                    setState(() {
-                                      selectedPayment = val;
-                                    });
-                                  },
-                                )
-                              : SizedBox(),
+
+                          // ? RadioListTile(
+                          //     activeColor: Theme.of(context).primaryColor,
+                          //     dense: true,
+                          //     value: 3,
+                          //     groupValue: selectedPayment,
+                          //     title: Text(
+                          //       'Pay via Razorpay',
+                          //       style: GoogleFonts.poppins(
+                          //         color: Colors.black87,
+                          //         fontSize: 14.0,
+                          //         fontWeight: FontWeight.w500,
+                          //         letterSpacing: 0.3,
+                          //       ),
+                          //     ),
+                          //     onChanged: (val) {
+                          //       setState(() {
+                          //         selectedPayment = val;
+                          //       });
+                          //     },
+                          //   )
                         ],
                       ),
                     ),
